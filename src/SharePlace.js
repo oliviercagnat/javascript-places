@@ -2,6 +2,8 @@ import { Modal } from './UI/Modal';
 import { Map } from './UI/Map';
 import { getCoordsFromAddress, getAddressFromCoords } from './Utility/Location';
 
+
+
 class PlaceFinder {
   constructor() {
     const addressForm = document.querySelector('form');
@@ -90,4 +92,5 @@ class PlaceFinder {
   }
 }
 
+console.log(process.env.GOOGLE_API_KEY);
 const placeFinder = new PlaceFinder();
